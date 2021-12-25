@@ -10,7 +10,7 @@ Jinja2==3.0.3
 MarkupSafe==2.0.1
 Pillow==8.4.0
 pyTelegramBotAPI==4.2.2
-tesseract==4.1.1
+tesseract
 pytesseract==0.3.8
 python-dotenv==0.19.2
 requests==2.26.0
