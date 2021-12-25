@@ -5,8 +5,16 @@ python-dotenv==0.13.0
 pyTelegramBotAPI==3.8.3
 Pillow==7.0.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 pytesseract
 pillow
 =======
 pytesseract
 >>>>>>> 36cef549c4dbea31be41637170b8bce1f410fd5d
+=======
+pytesseract
+=======
+pytesseract
+pillow
+>>>>>>> 8f50b282f904f8f871e3c22ef0e5608ac4309bde
+>>>>>>> cc071c7597e99161eed8eee899345775e7f946db
