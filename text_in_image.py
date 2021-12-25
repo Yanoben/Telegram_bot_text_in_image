@@ -12,8 +12,6 @@ load_dotenv()
 
 token = os.getenv('token')
 
-pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
-
 bot = telebot.TeleBot(token)
 bot_tran = Bot_transition()
 
