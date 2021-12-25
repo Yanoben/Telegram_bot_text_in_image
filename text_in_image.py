@@ -43,7 +43,7 @@ def get_files(path):
     return files
 
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['start', 'restart'])
 def start(message):
     bot_tran.new()
     rmk = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
