@@ -14,6 +14,7 @@ token = os.getenv('token')
 bot = telebot.TeleBot(token)
 bot_tran = Bot_transition()
 
+pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
 
 languages = {
     'method_english': 'English',
