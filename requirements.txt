@@ -4,5 +4,9 @@ telebot==0.0.4
 python-dotenv==0.13.0
 pyTelegramBotAPI==3.8.3
 Pillow==7.0.0
+<<<<<<< HEAD
 pytesseract
 pillow
+=======
+pytesseract
+>>>>>>> 36cef549c4dbea31be41637170b8bce1f410fd5d
