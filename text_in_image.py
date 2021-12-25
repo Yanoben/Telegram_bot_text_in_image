@@ -5,6 +5,7 @@ import telebot
 from dotenv import load_dotenv
 from bot_transitions import Bot_transition
 import time
+import logging
 
 
 load_dotenv()
@@ -64,7 +65,8 @@ def get_lang(message):
     elif message.text.lower() == 'русский':
         bot_tran.russian()
     a = telebot.types.ReplyKeyboardRemove()
-    bot.send_message(message.chat.id, 'Give me photo/image/picture', reply_markup=a)
+    bot.send_message(message.chat.id, 'Give me photo/image/picture',
+                     reply_markup=a)
     bot.register_next_step_handler(message, get_image)
 
 
@@ -89,6 +91,11 @@ def get_image(message):
 
 
 def main():
+    logging.basicConfig(
+        level=logging.DEBUG,
+        filename='main.log',
+        format='%(asctime)s, %(levelname)s, %(message)s, %(name)s'
+    )
     try:
         bot.infinity_polling()
     except Exception:
